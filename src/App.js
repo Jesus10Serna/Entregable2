@@ -35,7 +35,7 @@ function App() {
 
     navigator.geolocation?.getCurrentPosition(currenPosition)
 
-  }, []);
+  }, ['weather']);
 
   if(weather?.weather?.[0]?.main === 'Drizzle'){
     document.body.style.backgroundImage = `url(https://i.giphy.com/media/xT9GEOg09OuResnZ6g/giphy.gif)`
